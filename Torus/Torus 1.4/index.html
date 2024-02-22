@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Torus Properties Calculator</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body class="body">
+  <div class="tytuł">
+    <h1> <img src="zdj/torus zdjęcie.png"> <span>Torus Properties Calculator</span> <img src="zdj/torus zdjęcie.png"></h1>
+  </div>
+
+  <div class="input">
+    <label>Major Radius (R):</label>
+    <input type="number" id="R-input" value="0" />
+
+    <label>Minor Radius (r):</label>
+    <input type="number" id="r-input" value="0" />
+
+    <input
+      type="radio"
+      id="volume"
+      name="type"
+      value="volume"
+    />
+    <label for="volume">Torus Volume</label>
+
+    <input
+      type="radio"
+      id="surfaceArea"
+      name="type"
+      value="surfaceArea"
+    />
+    <label for="surfaceArea">Torus Surface Area       --> </label>
+
+    <input
+      type="button"
+      value="calculate"
+      id="calculate"
+    />
+  </div>
+
+  <div class="results">
+    <h2>Results:</h2>
+  </div>
+  <div id="output" class="output">
+    [tu pojawi się twój wynik] 
+  </div>
+
+  <div class="filler">
+      <p>Kalkulator torusa to narzędzie online umożliwiające szybkie i łatwe obliczenia związane z torusem - trójwymiarowym obiektem geometrycznym utworzonym przez obrót okręgu wokół osi nieleżącej w jego płaszczyźnie.
+
+      Ten prosty, intuicyjny kalkulator umożliwia użytkownikom obliczanie objętości i powierzchni torusa na podstawie wprowadzonych parametrów.</p>
+      
+      <h1>Funkcje kalkulatora:</h1>
+      
+      <h1>- Obliczanie Objętości Torusa:</h1>
+      <p>- Użytkownik wprowadza promień okręgu podstawowego torusa (r) oraz promień osi obrotu (R).</p>
+      <p>- Kalkulator automatycznie oblicza objętość torusa za pomocą wzoru V = (2π^2) * R * r^2.</p>
+      
+      <h1>- Obliczanie Powierzchni Torusa:</h1>
+      <p>- Użytkownik podaje promień okręgu podstawowego (r) i promień osi obrotu (R).</p>
+      <p>- Kalkulator dokonuje automatycznych obliczeń powierzchni torusa, korzystając ze wzoru S = 4π^2 * R * r.</p>
+      
+      <h1>Korzyści z korzystania z kalkulatora torusa:</h1>
+      
+      <p>- Szybkość i Wygoda: Prosta obsługa i intuicyjny interfejs umożliwiają szybkie uzyskanie wyników.</p>
+      <p>- Dokładność: Kalkulator stosuje precyzyjne matematyczne wzory, aby zapewnić dokładne obliczenia.</p>
+      <p>- Edukacja: Narzędzie może być przydatne dla studentów, nauczycieli i wszystkich zainteresowanych geometrią trójwymiarową.</p>
+      
+      <h2>Kalkulator torusa nie przechowuje żadnych danych wprowadzonych przez użytkownika i działa w trybie offline, zapewniając bezpieczeństwo i prywatność.</h2> 
+      
+      <h2>Zapraszamy do korzystania z naszego kalkulatora torusa, aby szybko i łatwo przeprowadzić obliczenia związane z tym fascynującym kształtem geometrycznym!</h2>
+
+  </div>
+
+</body>
+
+<footer class="footer">
+  <p>Copyright © 2022 My Website</p>
+</footer>
+
+</html>

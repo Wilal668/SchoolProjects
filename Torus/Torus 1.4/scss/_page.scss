@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@mixin base {
+    font-family: "Anta", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 70px;
+    background-color: $color-input;
+}
+@mixin inputBase {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+}
+
+.tytuł {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        margin: 0 20px;
+      }
+    }
+    @include base()
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        margin: 0 20px;
+      }
+    }
+    background-color: $color-input;
+    height : $height-input;
+    @include inputBase()
+}
+
+.results {
+    height : $height-input;
+    background-color: $color-output;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @include inputBase()
+}
+
+.output {
+    background-color: $color-output;
+    text-align: center;
+    padding: 15px;
+}
+
+.filler {
+    background-color: $color-input;
+    padding: 15px; 
+    text-align: left;
+    h1 {
+        font-weight: 800;
+        padding: 10px;
+        font-size: 25px;
+    }
+    p {
+        font-size: 20px;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $color-footer;
+    padding: 30px;
+    text-align: center;
+}
